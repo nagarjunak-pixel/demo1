@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Workspace | Early Access Waitlist</title>
+  <meta name="description" content="Join the waitlist for Antigravity Workspace, the next-generation agentic computing platform designed to automate workflows and elevate productivity.">
+  
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated Background Mesh -->
+  <div class="bg-wrapper" aria-hidden="true">
+    <div class="bg-mesh"></div>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <div class="page-container">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo-container">
+        <span class="logo-icon" aria-hidden="true">▲</span>
+        <span class="logo-text">Antigravity</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-grid">
+        
+        <!-- Left: Hero Messaging -->
+        <section class="hero-section">
+          <div class="badge">Waitlist Now Open</div>
+          <h1 class="hero-title">Defy friction. <br><span class="gradient-text">Automate everything.</span></h1>
+          <p class="hero-subtitle">
+            Antigravity is the world's first agentic workspace. Experience hands-free task execution, intelligent multi-agent coordination, and lightning-fast developer tools.
+          </p>
+          
+          <ul class="feature-list" role="list">
+            <li class="feature-item">
+              <span class="feature-icon" aria-hidden="true">✓</span>
+              <div>
+                <strong>Autonomous workflows</strong>
+                <p>Describe your goal; watch agents compile, test, and deploy it.</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon" aria-hidden="true">✓</span>
+              <div>
+                <strong>Context-aware execution</strong>
+                <p>Seamlessly integrates with your codebases, documents, and APIs.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Right: Signup Form Card -->
+        <section class="form-section">
+          <div class="glass-card" id="signup-card">
+            <div class="card-header">
+              <h2>Request Early Access</h2>
+              <p>Sign up below to claim your spot in the private beta.</p>
+            </div>
+
+            <!-- Form -->
+            <form id="waitlist-form" novalidate>
+              <div class="form-row">
+                <!-- First Name -->
+                <div class="form-group">
+                  <label for="first-name">First Name <span class="required-star">*</span></label>
+                  <input 
+                    type="text" 
+                    id="first-name" 
+                    name="first_name" 
+                    required 
+                    autocomplete="given-name" 
+                    placeholder="e.g. Jane"
+                    aria-errormessage="first-name-error"
+                  >
+                  <div id="first-name-error" class="error-msg" role="alert">
+                    <span aria-hidden="true">⚠️</span> First name is required.
+                  </div>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group">
+                  <label for="last-name">Last Name <span class="required-star">*</span></label>
+                  <input 
+                    type="text" 
+                    id="last-name" 
+                    name="last_name" 
+                    required 
+                    autocomplete="family-name" 
+                    placeholder="e.g. Doe"
+                    aria-errormessage="last-name-error"
+                  >
+                  <div id="last-name-error" class="error-msg" role="alert">
+                    <span aria-hidden="true">⚠️</span> Last name is required.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email Address <span class="required-star">*</span></label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  autocomplete="email" 
+                  placeholder="e.g. jane.doe@example.com"
+                  aria-errormessage="email-error"
+                >
+                <div id="email-error" class="error-msg" role="alert">
+                  <span aria-hidden="true">⚠️</span> Please enter a valid email address.
+                </div>
+              </div>
+
+              <!-- Country -->
+              <div class="form-group">
+                <label for="country">Country <span class="required-star">*</span></label>
+                <div class="select-wrapper">
+                  <select 
+                    id="country" 
+                    name="country" 
+                    required 
+                    aria-errormessage="country-error"
+                  >
+                    <option value="" disabled selected hidden>Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="IN">India</option>
+                    <option value="JP">Japan</option>
+                    <option value="BR">Brazil</option>
+                    <option value="SG">Singapore</option>
+                    <option value="OTHER">Other Country</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true">▼</span>
+                </div>
+                <div id="country-error" class="error-msg" role="alert">
+                  <span aria-hidden="true">⚠️</span> Please select your country.
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn-primary">
+                <span>Join the Waitlist</span>
+                <span class="btn-shine"></span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Success Screen (Initially Hidden) -->
+          <div class="glass-card success-card hidden" id="success-card">
+            <div class="success-icon" aria-hidden="true">✨</div>
+            <h2>You're on the list!</h2>
+            <p id="success-message">
+              Thank you for signing up, <strong id="user-display-name">Jane</strong>! We've reserved your spot and sent a confirmation email to <span id="user-display-email" class="highlight-text">jane.doe@example.com</span>.
+            </p>
+            <p class="share-text">Help us spread the word:</p>
+            <div class="social-share-buttons">
+              <button type="button" class="btn-secondary share-btn" id="share-twitter">Share on X</button>
+              <button type="button" class="btn-secondary share-btn" id="copy-link">Copy Invite Link</button>
+            </div>
+            <button type="button" class="btn-text" id="reset-form-btn">← Back to signup</button>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Antigravity Inc. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
